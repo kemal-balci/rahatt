@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahat.co - Accessible Publishing Automation</title>
+    <meta name="description"
+        content="Automate conversion of Docx to fully publishable, EAA compliant Epub3.3 with rahatt.co.">
+
+    <!-- Fonts & Icons -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+                publicKey: "ONkZNzbsG88WynxlA",
+            });
+        })();
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav class="nav-left">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#benefits" class="nav-link">Benefits</a>
+            </nav>
+
+            <a href="#" class="brand-logo">rahatt.co</a>
+
+            <nav class="nav-right">
+                <a href="#faq" class="nav-link">FAQ</a>
+                <a href="#" class="btn btn-sm btn-secondary">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="hero">
+        <div class="container hero-content">
+            <!-- Badge Removed as requested -->
+
+            <h1 class="fade-in-up delay-1">
+                Automate Digital Compliance. <span class="text-gradient">Scale Accessibility.</span>
+            </h1>
+
+            <p class="fade-in-up delay-2">
+                Mitigate risk and meet EU 2025 deadlines with full <strong>EPUB 3.3</strong> conversion.
+                Our engine ensures <strong>POUR</strong> compliance (Perceivable, Operable, Understandable, Robust)
+                aligned with WCAG 2.1 Level AA standards.
+            </p>
+
+            <form class="waitlist-form fade-in-up delay-3">
+                <div class="input-group">
+                    <input type="email" class="input-field" placeholder="Enter your email address" required
+                        aria-label="Email address">
+                    <div class="success-message">You're on the list! We'll be in touch.</div>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                    Join Waitlist
+                </button>
+            </form>
+
+            <!-- Trust Signals -->
+            <div id="trust" class="trust-signals fade-in-up delay-3"
+                style="display: flex; justify-content: center; gap: 40px; margin: 40px auto; opacity: 0.6; filter: grayscale(100%);">
+                <div style="font-weight: 700; color: var(--text-muted); display: flex; align-items: center; gap: 8px;">
+                    <i data-lucide="award" style="width: 20px;"></i> W3C Compliant
+                </div>
+                <div style="font-weight: 700; color: var(--text-muted); display: flex; align-items: center; gap: 8px;">
+                    <i data-lucide="book-open" style="width: 20px;"></i> IDPF Standards
+                </div>
+                <div style="font-weight: 700; color: var(--text-muted); display: flex; align-items: center; gap: 8px;">
+                    <i data-lucide="check-circle" style="width: 20px;"></i> DAISY Ready
+                </div>
+            </div>
+
+            <section id="benefits" class="offerings-grid fade-in-up delay-3">
+                <div class="offering-card feature-card">
+                    <h4 style="color: #059669; margin-bottom: 8px;">Available Now</h4>
+                    <h3 style="font-size: 1.2rem; margin-bottom: 8px;">Individual/B2C</h3>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">Standalone tools for authors and
+                        freelancers. Immediate access via pay-per-title.</p>
+                </div>
+                <div class="offering-card feature-card">
+                    <h4 style="color: #8a6a4b; margin-bottom: 8px;">Coming Q2 2026</h4>
+                    <h3 style="font-size: 1.2rem; margin-bottom: 8px;">Enterprise/B2B</h3>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">Full API integration, volume licensing, and
+                        team dashboards for large-scale publishing houses.</p>
+                </div>
+            </section>
+
+            <div id="features" class="features fade-in-up delay-3">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="shield-alert"></i>
+                    </div>
+                    <h3>Risk Mitigation (Annex I)</h3>
+                    <p>Ensure your digital products meet <strong>Annex I</strong> accessibility requirements, avoiding
+                        penalties under the European Accessibility Act.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="brain-circuit"></i>
+                    </div>
+                    <h3>Context-Aware Intelligence</h3>
+                    <p>Going beyond visual recognition, our AI interprets narrative context to generate
+                        <strong>meaningful text alternatives</strong> for images (WCAG 1.1.1).
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="globe"></i>
+                    </div>
+                    <h3>Discovery Metadata</h3>
+                    <p>Automatically injects schema.org accessibility metadata, ensuring your content is discoverable
+                        by readers with specific needs.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="layers"></i>
+                    </div>
+                    <h3>Hybrid Scalability</h3>
+                    <p>Flexible deployment models ranging from individual desktop solutions to high-volume enterprise
+                        API integrations.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- About Section -->
+    <section class="section about-section fade-in-up delay-3">
+        <div class="content-wrapper">
+            <div class="about-text">
+                <h2>Mission: <span class="text-gradient">Accessible Publishing</span></h2>
+                <p>
+                    Digital accessibility is the foundation of the modern <strong>Open Web Platform</strong>.
+                    We build robust tools that leverage HTML, CSS, and XML semantics to create truly universal content.
+                </p>
+                <p>
+                    rahatt.co bridges the gap between technical standards (EPUB 3.3) and creative workflows.
+                    We empower you to publish content that is Perceivable, Operable, Understandable, and Robust.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section faq-section fade-in-up delay-3">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>How does your reliable EAA compliance reduce my business risk?</span>
+                    <i data-lucide="chevron-down" class="faq-icon"></i>
+                </button>
+                <div class="faq-answer">
+                    <div class="answer-content">
+                        Non-compliance with the European Accessibility Act by 2025 can lead to market exclusion. Our
+                        automated engine enforces <strong>WCAG 2.1 Level AA</strong> criteria, including color
+                        contrast ratio (1.4.3), text resizing (1.4.4), and proper reading order.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>What is "Context-Aware" Alt-Text and why does it matter?</span>
+                    <i data-lucide="chevron-down" class="faq-icon"></i>
+                </button>
+                <div class="faq-answer">
+                    <div class="answer-content">
+                        To meet WCAG 1.1.1 (Non-text Content), descriptions must convey the <em>purpose</em> of the
+                        image. Our system reads the surrounding textual context to generate descriptions that are
+                        relevant to the narrative, not just the pixels.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>What is the difference between individual and enterprise plans?</span>
+                    <i data-lucide="chevron-down" class="faq-icon"></i>
+                </button>
+                <div class="faq-answer">
+                    <div class="answer-content">
+                        Our Individual (B2C) offering is a pay-per-title tool available now for freelancers and authors.
+                        The Enterprise (B2B) platform (Q2 2026) offers API access, high-volume batch processing, and
+                        team management features for publishers.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Can we integrate this into our CMS before the enterprise launch?</span>
+                    <i data-lucide="chevron-down" class="faq-icon"></i>
+                </button>
+                <div class="faq-answer">
+                    <div class="answer-content">
+                        We are currently beta testing API endpoints with select partners. If you have immediate
+                        high-volume integration needs, please join the waitlist and mention your requirements for
+                        priority access.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Do you offer custom onboarding for large backlist conversions?</span>
+                    <i data-lucide="chevron-down" class="faq-icon"></i>
+                </button>
+                <div class="faq-answer">
+                    <div class="answer-content">
+                        Yes. For publishers with thousands of titles, we offer managed migration services to ensure your
+                        entire backlist is remediated and compliant efficiently.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-col brand-col">
+                <a href="#" class="brand-logo">rahatt.co</a>
+                <p>Automating digital accessibility for the future of publishing.</p>
+            </div>
+
+            <div class="footer-col links-col">
+                <h4>Legal</h4>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+
+            <div class="footer-col links-col">
+                <h4>Connect</h4>
+                <a href="#">Twitter / X</a>
+                <a href="#">LinkedIn</a>
+                <a href="mailto:hello@rahatt.co">Contact Support</a>
+            </div>
+        </div>
+        <div class="container copyright">
+            <p>&copy; 2025 rahatt.co. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
