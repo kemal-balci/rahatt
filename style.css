@@ -259,16 +259,19 @@ header .container {
 }
 
 .brand-logo {
-    font-size: 1.5rem;
-    letter-spacing: -0.02em;
-    color: var(--text-main);
     text-decoration: none;
-    text-align: center;
     display: flex;
-    /* Flex alignment for logo text */
     align-items: center;
     justify-content: center;
     height: 100%;
+    transition: var(--transition-fast);
+}
+
+.brand-logo img {
+    height: 96px;
+    /* High-end logo size */
+    width: auto;
+    object-fit: contain;
 }
 
 /* Hero Section */
@@ -553,18 +556,26 @@ header .container {
 
 /* Footer (Expanded) */
 footer {
-    border-top: 1px solid var(--border-color);
-    padding: 60px 0 20px;
     background: #e5e0d8;
     /* Distinctly darker latte/taupe */
 }
 
+.footer-main {
+    padding: 32px 0;
+    /* Reduced from 48px to compact the layout */
+    border-top: 1px solid #e5e0d8;
+}
+
 .footer-content {
     display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
     justify-content: space-between;
-    padding-bottom: 40px;
+    align-items: flex-start;
+}
+
+.footer-links-group {
+    display: flex;
+    gap: 80px;
+    /* Increased gap between Legal and Connect */
 }
 
 .footer-col {
@@ -573,39 +584,46 @@ footer {
 }
 
 .footer-col h4 {
-    color: var(--text-main);
-    margin-bottom: 20px;
-    font-size: 0.9rem;
+    color: #3d342b;
+    /* Dark Coffee */
+    margin-bottom: 12px;
+    font-size: 0.8rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    opacity: 0.7;
-    font-weight: 600;
+    font-weight: 700;
+    /* Bold */
+    display: inline-block;
+    border-bottom: 2px solid #e5e0d8;
+    /* Soft Taupe underline */
+    padding-bottom: 4px;
 }
 
 .brand-col .brand-logo {
-    display: inline-block;
-    margin-bottom: 0;
-    /* Removing margin to use separator spacing */
-    color: var(--text-main);
+    margin-bottom: 12px;
+    /* Reduced from 20px */
+}
+
+.brand-col .brand-logo img {
+    height: 126px;
+    /* Slightly larger in footer */
 }
 
 .brand-separator {
     height: 1px;
-    width: 60px;
-    /* Small distinct divider */
+    width: 40px;
     background-color: rgba(0, 0, 0, 0.1);
-    margin: 16px 0;
+    margin: 6px 0;
+    /* Reduced from 8px */
     display: block;
 }
 
 .brand-col .brand-tagline {
     display: block;
-    /* Ensure block behavior */
     color: var(--text-muted);
     max-width: 300px;
     padding-top: 4px;
-    /* Breathing room */
-    line-height: 1.6;
+    line-height: 1.4;
+    font-size: 0.85rem;
 }
 
 .links-col {
@@ -623,16 +641,19 @@ footer {
 
 .links-col a:hover {
     color: #8a6a4b;
-    padding-left: 4px;
+}
+
+.footer-bottom {
+    padding: 16px 0;
+    border-top: 1px solid #e5e0d8;
+    background: rgba(0, 0, 0, 0.02);
 }
 
 .copyright {
     text-align: center;
-    border-top: 1px solid rgba(0, 0, 0, 0.05);
-    padding-top: 20px;
     color: var(--text-muted);
-    font-size: 0.85rem;
-    opacity: 0.8;
+    font-size: 12px;
+    opacity: 0.7;
 }
 
 /* Mobile Tweaks */
@@ -708,16 +729,38 @@ footer {
 
     .footer-content {
         flex-direction: column;
-        gap: 40px;
+        gap: 32px;
+        /* Adjusted from 40px for compactness without being cramped */
         text-align: center;
+        align-items: center;
+    }
+
+    .footer-links-group {
+        flex-direction: column;
+        gap: 32px;
     }
 
     .footer-col {
         width: 100%;
     }
 
+    .links-col {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .brand-col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .brand-col p {
         margin: 0 auto;
+    }
+
+    .footer-bottom {
+        padding: 20px 0;
     }
 }
 

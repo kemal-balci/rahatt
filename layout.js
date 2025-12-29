@@ -17,7 +17,9 @@ const HEADER_HTML = `
             </nav>
         </div>
 
-        <a href="index.html" class="brand-logo">rahatt.co</a>
+        <a href="index.html" class="brand-logo">
+            <img src="logo_full.png" alt="rahatt.co logo">
+        </a>
 
         <div class="header-section right">
             <nav class="nav-group desktop-nav">
@@ -61,29 +63,39 @@ const HEADER_HTML = `
 
 
 const FOOTER_HTML = `
-    <div class="container footer-content">
-        <div class="footer-col brand-col">
-            <a href="index.html" class="brand-logo">rahatt.co</a>
-            <div class="brand-separator"></div>
-            <p class="brand-tagline">Automating digital accessibility for the future of publishing.</p>
-        </div>
+    <div class="footer-main">
+        <div class="container footer-content">
+            <div class="footer-col brand-col">
+                <a href="index.html" class="brand-logo">
+                    <img src="logo_full.png" alt="rahatt.co logo">
+                </a>
+                <div class="brand-separator"></div>
+                <p class="brand-tagline">Automating digital accessibility for the future of publishing.</p>
+            </div>
 
-        <div class="footer-col links-col">
-            <h4>Legal</h4>
-            <a href="privacy.html">Privacy Policy</a>
-            <a href="terms.html">Terms of Service</a>
-            <a href="cookies.html">Cookie Policy</a>
-        </div>
+            <div class="footer-links-group">
+                <div class="footer-col links-col">
+                    <h4>Legal</h4>
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="cookies.html">Cookie Policy</a>
+                </div>
 
-        <div class="footer-col links-col">
-            <h4>Connect</h4>
-            <a href="#">Twitter / X</a>
-            <a href="#">LinkedIn</a>
-            <a href="mailto:hello@rahatt.co">Contact Support</a>
+                <div class="footer-col links-col">
+                    <h4>Connect</h4>
+                    <a href="#">Twitter / X</a>
+                    <a href="#">LinkedIn</a>
+                    <a href="mailto:hello@rahatt.co">Contact Support</a>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="container copyright">
-        <p>&copy; 2025 rahatt.co. All rights reserved.</p>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="copyright">
+                &copy; ${new Date().getFullYear()} rahatt.co. All rights reserved.
+            </div>
+        </div>
     </div>
 `;
 
